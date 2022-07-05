@@ -2539,7 +2539,7 @@ input, select, textarea {
 	@media screen and (max-width: 400px) {
 
 		header.major h2 {
-			padding 1em 0em;
+			padding: 1em 0em;
 			display: inline-block;
 			width: 100%;
 		}
