@@ -771,7 +771,7 @@ ul > li {
 	border-bottom: 2px solid var(--color-highlight);
 	width: fit-content;
 	margin: 0 auto 2rem auto;
-	padding-bottom: 0 1rem 0.4rem 1rem;
+	padding: 0 1rem 0.4rem 1rem;
 }
 
 .project-page-description > p {
