@@ -141,6 +141,9 @@ body {
 	.banner {
 		display: none;
 	}
+	.navigation {
+		margin-bottom: 4rem;
+	}
 }
 
 
@@ -426,6 +429,8 @@ ul > li {
 @media screen and (max-width: 900px) {
 	.skill {
 		flex-wrap: wrap; /*Might be able to automate this later*/
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
@@ -666,7 +671,7 @@ ul > li {
 .project-page.info-wrapper {
 	background-color: var(--color-background-element);
 	padding: 2rem;
-	width: 80%;
+	width: 90%;
 }
 
 
@@ -753,8 +758,6 @@ ul > li {
 	margin: 0 auto;
 	width: 100%;
 	flex: 1 0 60%;
-	padding: 0 2rem;
-	
 }
 
 .project-page-description > h1 {
@@ -762,7 +765,7 @@ ul > li {
 	border-bottom: 2px solid var(--color-highlight);
 	width: fit-content;
 	margin: 0 auto 2rem auto;
-	padding: 0 2rem 0.5rem 2rem;
+	padding-bottom: 0 1rem 0.25rem 1rem;
 }
 
 .project-page-description > p {
