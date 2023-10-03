@@ -1,8 +1,12 @@
+---
+food: Pizza
+---
+
 <!DOCTYPE HTML>
 <html>
 
 <head>
-    <title>{{ page.title }}</title>
+    <title>{{ page.food }}</title>
     <meta charset="utf-8">
     <meta lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -19,7 +23,7 @@
             </a>
             <a class="link" href="mailto:Dennis.Vidal.dc@gmail.com">
                 <i class="fas fa-envelope"></i>
-                <p class="e-mail">Dennis.Vidal.dc@gmail.com</p>
+                <p class="e-mail">{{ page.food }} Dennis.Vidal.dc@gmail.com</p>
             </a>
         </div>
         <div class="other-links">
