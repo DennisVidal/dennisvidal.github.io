@@ -356,13 +356,12 @@ body {
 @media screen and (max-width: 1280px) {
 	.carousel-item {
 		width: 50%;
-	
 	}
 }
+
 @media screen and (max-width: 800px) {
 	.carousel-item {
 		width: 100%;
-	
 	}
 }
 
@@ -816,4 +815,31 @@ ul > li {
 	color: var(--color-highlight);
 	background-color: transparent;
 	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+.mods-content {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	justify-content: start;
+	transition: transform 0.8s ease-in-out;
+}
+.mods-item {
+	width: calc(50%);
+	padding: 1rem 1rem;
+	flex-shrink: 0;
+	aspect-ratio: 16 / 9;
+}
+
+@media screen and (max-width: 800px) {
+	.mods-item {
+		width: 100%;
+	}
 }
