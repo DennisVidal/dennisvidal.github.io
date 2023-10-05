@@ -1,0 +1,69 @@
+---
+title: "DayZ Mods"
+permalink: "/dayz-mods/"
+
+mods:
+    -   name: "Banking"
+        url: "/dayz-banking/"
+        image: "/images/dayz-banking/banking-thumbnail.jpg"
+    -   name: "Fast Travel"
+        url: "/dayz-fast-travel/"
+        image: "/images/dayz-fast-travel/fast-travel-thumbnail.jpg"
+    -   name: "More Explosives"
+        url: "/dayz-more-explosives/"
+        image: "/images/dayz-more-explosives/more-explosives-thumbnail.jpg"
+    -   name: "Breachingcharge"
+        url: "/dayz-breachingcharge/"
+        image: "/images/dayz-breachingcharge/breachingcharge-thumbnail.jpg"
+---
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/all.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="links">
+            <a class="link" href="{{ site.github }}" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="link" href="mailto:{{ site.email }}">
+                <i class="fas fa-envelope"></i>
+                <p class="e-mail">{{ site.email }}</p>
+            </a>
+        </div>
+        <div class="other-links">
+            <a href="/" class="navigation-home">About Me</a>
+            <a href="{{ site.resume }}" target="_blank">Resume</a>
+        </div>
+    </nav>
+    <main class="page-main">
+        <section class="project-page content-section">
+            <div class="project-page-content">
+                <div class="project-page-description">
+                    <h1>DayZ Mods</h1>
+                    <div class="mods-content">
+                        {% for mod in page.mods %}
+                            <div class="mods-item">
+                                <a class="project" href="{{ mod.url }}">
+                                    <p class="project-title">{{ mod.name }}</p>
+                                    <img class="project-image" src="{{ mod.image }}" alt="A picture of {{ mod.name }}">
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/jss/carousel.js"></script>
+</body>
+</html>

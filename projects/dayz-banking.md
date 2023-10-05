@@ -11,7 +11,7 @@ role-descriptions:
 
 links:
     -   name: "github"
-        url: "https://github.com/DennisVidal/DayZ-Banking"
+        url: "https://github.com/DennisVidal/dayz-banking"
         icon: "fab fa-github"
     -   name: "steam"
         url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1836257061"

@@ -1,5 +1,114 @@
 ---
- title: test
+ projects:
+    -   name: "Neon Coil"
+        url: "/neon-coil/"
+        image: "/images/neon-coil/neon-coil-thumbnail.jpg"
+
+    -   name: "Research Ravine"
+        url: "/research-ravine/"
+        image: "/images/research-ravine/research-ravine-thumbnail.jpg"
+
+    -   name: "DayZ Banking"
+        url: "/dayz-banking/"
+        image: "/images/dayz-banking/banking-thumbnail.jpg"
+
+    -   name: "DayZ Fast Travel"
+        url: "/dayz-fast-travel/"
+        image: "/images/dayz-fast-travel/fast-travel-thumbnail.jpg"
+
+    -   name: "DayZ More Explosives"
+        url: "/dayz-more-explosives/"
+        image: "/images/dayz-more-explosives/more-explosives-thumbnail.jpg"
+
+    -   name: "DayZ Breachingcharge"
+        url: "/dayz-breachingcharge/"
+        image: "/images/dayz-breachingcharge/breachingcharge-thumbnail.jpg"
+
+    -   name: "Cthulhu Attacks"
+        url: "/cthulhu-attacks/"
+        image: "/images/cthulhu-attacks/cthulhu-attacks-thumbnail.jpg"
+
+    -   name: "Nonverbal Communication"
+        url: "/nonverbal-communication/"
+        image: "/images/nonverbal-communication/nonverbal-communication-thumbnail.jpg"
+
+    -   name: "Compulsive Hoarding"
+         url: "/compulsive-hoarding/"
+        image: "/images/compulsive-hoarding/compulsive-hoarding-thumbnail.jpg"
+
+
+
+skills:
+    -   name: "C# / C++"
+        icon: "fas fa-code"
+        description: "C++ and C# have been core aspects of my degrees, allowing me to gather substantial theoretical knowledge and hands-on experience with both languages. I constantly refine this knowledge further through personal projects, and consequently, I can not only write clean, performant code but also have the ability to debug code to resolve any issues that could arise."
+    
+    -   name: "Engine Knowledge"
+        icon: "fas fa-computer"
+        description: "Unreal and Unity were the basis for the majority of projects during my academic studies, and since my graduation, Unreal has been the focus of my personal projects. Together with the experiences I amassed through creating mods with DayZ's Enfusion Engine, I am well-versed in working with game engines and able to quickly familiarize myself with any components that might be required."
+    
+    -   name: "Game Development"
+        icon: "fas fa-gamepad"
+        description: "Thanks to my degrees and my passion for and years of playing games across many genres, I have an excellent understanding of game mechanics and other fields beyond just programming, such as game design, animation, modeling, networking, and UI. As a result, I can approach projects with a well-rounded perspective and design components in a way that is beneficial to the team as well as the player experience."
+    
+    -   name: "Teamwork"
+        icon: "fas fa-users"
+        description: "Working with people has always played a significant role in most of my projects, be it collaborating directly in a team to finish a game or giving and receiving feedback in regards to decisions and design. Supporting my mods over the years has been especially helpful in regards to further improving my team-related skills, as I got to work with people with vastly different backgrounds and skill sets. Combined with my general game development knowledge, I can work efficiently with teams across multiple disciplines."
+
+
+educations:
+    -   name:
+            - "Master of Science"
+            - "Game Engineering and Visual Computing"
+        school:
+            - "May 2022"
+            - "University of Applied Sciences"
+            - "Kempten, Germany"
+        result:
+            - "1.1 / 1.0"
+            - "Graduated with distinction"
+            - "Graduated top of class"
+        url: /certificates/DennisVidal_Master.pdf
+
+    -   name:
+        - "Bachelor of Science"
+        - "Computer Science – Game Engineering"
+        school:
+            - "July 2020"
+            - "University of Applied Sciences"
+            - "Kempten, Germany"
+        result:
+            - "1.5 / 1.0"
+        url: /certificates/DennisVidal_Bachelor.pdf
+
+papers:
+    -   name: "Noise-based Generation of 3D Worlds for a VR Flight Simulation"
+        url: "/papers/DennisVidal_MasterThesis_ProceduralGeneration.pdf"
+        meta:
+            - "April 2022"
+            - "Master's thesis (German)"
+        description: "The focus of my master's thesis is the procedural generation of environments in games. The paper describes different aspects of procedural generation as well as the flight simulation I developed as part of the thesis."
+   
+    -   name: "Multimodal Influences on Perception to Increase the Immersion of VR Applications"
+        url: "/papers/DennisVidal_SeminarPaper_Immersion.pdf"
+        meta:
+            - "June 2021"
+            - "Seminar paper (English)"
+        description: "The general topic of this paper is immersion in games. It dives into what immersion actually is, the factors that influence it, and ways that can be utilized to increase it in the context of games."
+    
+    -   name: "Nonverbal Communication with Autonomously Controlled Characters in AR Worlds"
+        url: "/papers/DennisVidal_BachelorThesis_NonverbalCommunication.pdf"
+        meta:
+            - "June 2020"
+            - "Bachelor's thesis (German)"
+        description: "The focus of my bachelor's thesis is communication with virtual characters through nonverbal means, e.g., gaze direction and distance to the character. The paper describes certain aspects of nonverbal communication and cues as well as the project I developed as part of the thesis."
+    
+    -   name: "Learning Analytics for Serious Games"
+        url: "/papers/DennisVidal_SeminarPaper_LearningAnalytics.pdf"
+        meta:
+            - "June 2019"
+            - "Seminar paper (English)"
+        description: "The topic of this paper is learning analytics and its application in serious games. It provides general information about learning analytics and gives an overview of its components."
 ---
 
 
@@ -7,7 +116,7 @@
 <html>
 
 <head>
-    <title>Dennis Vidal's Portfolio</title>
+    <title>{{ site.title }}</title>
     <meta charset="utf-8">
     <meta lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -19,21 +128,19 @@
 <body>
     <nav class="navigation">
         <div class="links">
-            <a class="link" href="https://github.com/DennisVidal?tab=repositories" target="_blank">
+            <a class="link" href="{{ site.github }}" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
-            <a class="link" href="mailto:Dennis.Vidal.dc@gmail.com">
+            <a class="link" href="mailto:{{ site.email }}">
                 <i class="fas fa-envelope"></i>
                 <p class="e-mail">{{ site.email }}</p>
             </a>
         </div>
         <div class="other-links">
-            <a href="/resume/DennisVidal_Resume.pdf" target="_blank">Resume</a>
+            <a href="{{ site.resume }}" target="_blank">Resume</a>
         </div>
     </nav>
-    
-    
-    
+
     <main class="page-main">
         <header class="banner">
             <h1 class="banner-text">Hey there and welcome to my portfolio</h1>
@@ -69,69 +176,14 @@
             <div class="content">
                 <div class="carousel">
                     <div class="carousel-content">
-                        <div class="carousel-item">
-                            <a class="project" href="/projects/NeonCoil/">
-                                <p class="project-title">Neon Coil</p>
-                                <img class="project-image" src="/projects/NeonCoil/images/NeonCoil_Thumbnail.jpg" alt="A picture of Neon Coil">
-                            </a>
-                        </div>
-    
-                        <div class="carousel-item">
-                            <a class="project" href="/projects/ResearchRavine/">
-                                <p class="project-title">Research Ravine</p>
-                                <img class="project-image" src="/projects/ResearchRavine/images/ResearchRavine_Thumbnail.jpg" alt="A picture of Research Ravine">
-                            </a>
-                        </div>
-    
-                        <div class="carousel-item">
-                            <a class="project" href="/projects/Banking/">
-                                <p class="project-title">DayZ Mod – Banking</p>
-                                <img class="project-image" src="/projects/Banking/images/Banking_Thumbnail.jpg" alt="A picture of the DayZ mod Banking">
-                            </a>
-                        </div>
-    
-                        <div class="carousel-item">
-                            <a class="project" href="/projects/FastTravel/">
-                                <p class="project-title">DayZ Mod – Fast Travel</p>
-                                <img class="project-image" src="/projects/FastTravel/images/FastTravel_Thumbnail.jpg" alt="A picture of the DayZ mod Fast Travel">
-                            </a>
-                        </div>
-    
-                        <div class="carousel-item">
-                            <a class="project" href="/projects/MoreExplosives/">
-                                <p class="project-title">DayZ Mod – More Explosives</p>
-                                <img class="project-image" src="/projects/MoreExplosives/images/MoreExplosives_Thumbnail.jpg" alt="A picture of the DayZ mod More Explosives">
-                            </a>
-                        </div>
-    
-                        <div class="carousel-item">
-                            <a class="project" href="/projects/Breachingcharge/">
-                                <p class="project-title">DayZ Mod – Breachingcharge</p>
-                                <img class="project-image" src="/projects/Breachingcharge/images/Breachingcharge_Thumbnail.jpg" alt="A picture of the DayZ mod Breachingcharge">
-                            </a>
-                        </div>
-    
-                        <div class="carousel-item">
-                            <a class="project" href="/projects/CthulhuAttacks/">
-                                <p class="project-title">Cthulhu Attacks</p>
-                                <img class="project-image" src="/projects/CthulhuAttacks/images/CthulhuAttacks_Thumbnail.jpg" alt="A picture of Cthulhu Attacks">
-                            </a>
-                        </div>
-
-                        <div class="carousel-item">
-                            <a class="project" href="/projects/NonverbalCommunication/">
-                                <p class="project-title">Nonverbal Communication</p>
-                                <img class="project-image" src="/projects/NonverbalCommunication/images/NonverbalCommunication_Thumbnail.jpg" alt="A picture of Nonverbal Communication">
-                            </a>
-                        </div>
-
-                        <div class="carousel-item">
-                            <a class="project" href="/projects/CompulsiveHoarding/">
-                                <p class="project-title">Compulsive Hoarding</p>
-                                <img class="project-image" src="/projects/CompulsiveHoarding/images/CompulsiveHoarding_Thumbnail.jpg"  alt="A picture of the serious game Compulsive Hoarding">
-                            </a>
-                        </div>
-
+                        {% for project in page.projects %}
+                            <div class="carousel-item">
+                                <a class="project" href="{{ project.url }}">
+                                    <p class="project-title">{{ project.name }}</p>
+                                    <img class="project-image" src="{{ project.image }}" alt="A picture of {{ project.name }}">
+                                </a>
+                            </div>
+                        {% endfor %}
                     </div>
                     <div class="carousel-controls">
                         <button class="carousel-button prev">
@@ -155,47 +207,17 @@
             </header>
             <div class="content">
                 <div class="skills">
-    
-                    <div class="skill">
-                        <div class="skill-header">
-                            <i class="skill-icon fas fa-code"></i>
-                            <p class="skill-name">C# / C++</p>
+                    {% for skill in page.skills %}
+                        <div class="skill">
+                            <div class="skill-header">
+                                <i class="skill-icon {{ skill.icon }}"></i>
+                                <p class="skill-name">{{ skill.name }}</p>
+                            </div>
+                            <p class="skill-description">
+                                {{ skill.description }}
+                            </p>
                         </div>
-                        <p class="skill-description">
-                            C++ and C# have been core aspects of my degrees, allowing me to gather substantial theoretical knowledge and hands-on experience with both languages. I constantly refine this knowledge further through personal projects, and consequently, I can not only write clean, performant code but also have the ability to debug code to resolve any issues that could arise.
-                        </p>
-                    </div>
-        
-                    <div class="skill">
-                        <div class="skill-header">
-                            <i class="skill-icon fas fa-computer"></i>
-                            <p class="skill-name">Engine Knowledge</p>
-                        </div>
-                        <p class="skill-description">
-                            Unreal and Unity were the basis for the majority of projects during my academic studies, and since my graduation, Unreal has been the focus of my personal projects. Together with the experiences I amassed through creating mods with DayZ's Enfusion Engine, I am well-versed in working with game engines and able to quickly familiarize myself with any components that might be required.
-                        </p>
-                    </div>
-        
-                    <div class="skill">
-                        <div class="skill-header">
-                            <i class="skill-icon fas fa-gamepad"></i>
-                            <p class="skill-name">Game Development</p>
-                        </div>
-                        <p class="skill-description">
-                            Thanks to my degrees and my passion for and years of playing games across many genres, I have an excellent understanding of game mechanics and other fields beyond just programming, such as game design, animation, modeling, networking, and UI. As a result, I can approach projects with a well-rounded perspective and design components in a way that is beneficial to the team as well as the player experience.
-                        </p>
-                    </div>
-        
-                    <div class="skill">
-                        <div class="skill-header">
-                            <i class="skill-icon fas fa-users"></i>
-                            <p class="skill-name">Teamwork</p>
-                        </div>
-                        <p class="skill-description">
-                            Working with people has always played a significant role in most of my projects, be it collaborating directly in a team to finish a game or giving and receiving feedback in regards to decisions and design. Supporting my mods over the years has been especially helpful in regards to further improving my team-related skills, as I got to work with people with vastly different backgrounds and skill sets. Combined with my general game development knowledge, I can work efficiently with teams across multiple disciplines.
-                        </p>
-                    </div>
-
+                    {% endfor %}
                 </div>
             </div>
         </section>
@@ -207,37 +229,25 @@
             </header>
             <div class="content" id="education">
                 <div class="educations">
-                    <a class="education" href="/certificates/DennisVidal_Master.pdf" target="_blank">
-                        <div class="education-title">
-                            <p>Master of Science</p>
-                            <p>Game Engineering & Visual Computing</p>
-                        </div>
-                        <div class="education-result">
-                            <p>1.1 / 1.0</p>
-                            <p>Graduated with distinction</p>
-                            <p>Graduated top of class</p>
-                        </div>
-                        <div class="education-school">
-                            <p>May 2022</p>
-                            <p>University of Applied Sciences</p>
-                            <p>Kempten, Germany</p>
-                        </div>
-                    </a>
-    
-                    <a class="education" href="/certificates/DennisVidal_Bachelor.pdf" target="_blank">
-                        <div class="education-title">
-                            <p>Bachelor of Science</p>
-                            <p>Computer Science – Game Engineering</p>
-                        </div>
-                        <div class="education-result">
-                            <p>1.5 / 1.0</p>
-                        </div>
-                        <div class="education-school">
-                            <p>July 2020</p>
-                            <p>University of Applied Sciences</p>
-                            <p>Kempten, Germany</p>
-                        </div>
-                    </a>
+                    {% for education in page.educations %}
+                        <a class="education" href=" {{ education.url }}" target="_blank">
+                            <div class="education-title">
+                                {% for entry in page.name %}
+                                    <p>{{ entry }}</p>
+                                {% endfor %}
+                            </div>
+                            <div class="education-result">
+                                {% for entry in page.result %}
+                                    <p>{{ entry }}</p>
+                                {% endfor %}
+                            </div>
+                            <div class="education-school">
+                                {% for entry in page.school %}
+                                    <p>{{ entry }}</p>
+                                {% endfor %}
+                            </div>
+                        </a>
+                    {% endfor %}
                 </div>
             </div>
         </section>
@@ -249,56 +259,19 @@
             </header>
             <div class="content">
                 <div class="papers">
-    
-                    <a class="paper" href="/papers/DennisVidal_MasterThesis_ProceduralGeneration.pdf"
-                        target="_blank">
-                        <p class="paper-title">Noise-based Generation of 3D Worlds for a VR Flight Simulation</p>
-                        <div class="paper-meta">
-                            <p>April 2022</p>
-                            <p>Master's thesis (German)</p>
-                        </div>
-                        <p class="paper-description">
-                            The focus of my master's thesis is the procedural generation of environments in games. The paper describes different aspects of procedural generation as well as the flight simulation I developed as part of the thesis.
-                        </p>
-                    </a>
-    
-                    <a class="paper" href="/papers/DennisVidal_SeminarPaper_Immersion.pdf"
-                        target="_blank">
-                        <p class="paper-title">Multimodal Influences on Perception to Increase the Immersion of VR Applications</p>
-                        <div class="paper-meta">
-                            <p>June 2021</p>
-                            <p>Seminar paper (English)</p>
-                        </div>
-                        <p class="paper-description">
-                            The general topic of this paper is immersion in games. It dives into what immersion actually is, the factors that influence it, and ways that can be utilized to increase it in the context of games.
-                        </p>
-                    </a>
-    
-                    <a class="paper"
-                        href="/papers/DennisVidal_BachelorThesis_NonverbalCommunication.pdf"
-                        target="_blank">
-                        <p class="paper-title">Nonverbal Communication with Autonomously Controlled Characters in AR Worlds</p>
-                        <div class="paper-meta">
-                            <p>June 2020</p>
-                            <p>Bachelor's thesis (German)</p>
-                        </div>
-                        <p class="paper-description">
-                            The focus of my bachelor's thesis is communication with virtual characters through nonverbal means, e.g., gaze direction and distance to the character. The paper describes certain aspects of nonverbal communication and cues as well as the project I developed as part of the thesis.
-                        </p>
-                    </a>
-    
-                    <a class="paper" href="/papers/DennisVidal_SeminarPaper_LearningAnalytics.pdf"
-                        target="_blank">
-                        <p class="paper-title">Learning Analytics for Serious Games</p>
-                        <div class="paper-meta">
-                            <p>June 2019</p>
-                            <p>Seminar paper (English)</p>
-                        </div>
-                        <p class="paper-description">
-                            The topic of this paper is learning analytics and its application in serious games. It provides general information about learning analytics and gives an overview of its components.
-                        </p>
-                    </a>
-    
+                    {% for paper in page.papers %}
+                        <a class="paper" href="{{ paper.url }}" target="_blank">
+                            <p class="paper-title">{{ paper.name }}</p>
+                            <div class="paper-meta">
+                                {% for entry in page.meta %}
+                                    <p>{{ entry }}</p>
+                                {% endfor %}
+                            </div>
+                            <p class="paper-description">
+                                {{ paper.description }}
+                            </p>
+                        </a>
+                    {% endfor %}
                 </div>
             </div>
         </section>
