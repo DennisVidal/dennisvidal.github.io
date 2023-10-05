@@ -2,7 +2,6 @@
 layout: project
 title: "DayZ Banking"
 permalink: /dayz-banking-test
-
 video: "https://www.youtube.com/embed/Yi5lOAzYwzY"
 
 descriptions:
@@ -12,28 +11,34 @@ role-descriptions:
     - "As the developer of the mod, I worked on every part of it. Since it was essentially my first mod for DayZ, this required a decent amount of time, as I had to familiarize myself not only with the modding side of DayZ's Enfusion Engine but also figure out aspects that I had relatively little hands-on experience with at the time, for example, the networking required to get the mod to work in multiplayer."
 
 links:
-    - "https://github.com/DennisVidal/DayZ-Banking"
+    -   name: "github"
+        url: "https://github.com/DennisVidal/DayZ-Banking"
         icon: "fab fa-github"
-    - "https://steamcommunity.com/sharedfiles/filedetails/?id=1836257061"
+    -   name: "steam"
+        url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1836257061"
         icon: "fab fa-steam"
 
 release: "August 2019"
 
-engine: "Enfusion"
+engine:
+    name: "Enfusion"
     url: "https://enfusionengine.com"
 
 languages:
-    - "Enforce Script (C#&#8209like)"
+    -   name: "Enforce Script (C#&#8209like)"
         url: "https://community.bistudio.com/wiki/DayZ:Enforce_Script_Syntax"
 
-roles: ["Programmer", "Designer", "Artist"]
+roles:
+    - "Programmer"
+    - "Designer"
+    - "Artist"
 
 tools:
-    - "Visual Studio"
-    - "DayZ Tools"
+    -   name: "Visual Studio"
+    -   name: "DayZ Tools"
         url: "https://store.steampowered.com/app/830640/DayZ_Tools/"
-    - "Blender"
-    - "Substance Painter"
+    -   name: "Blender"
+    -   name: "Substance Painter"
 
 screenshots:
     - "/projects/Banking/images/Banking_1.jpg"
