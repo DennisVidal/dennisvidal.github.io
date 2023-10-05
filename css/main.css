@@ -218,7 +218,7 @@ body {
 
 .about-me-summary > p {
 	color: var(--color-text);
-	text-align: justify;
+	text-align: left;
 	flex: 1 0;
 	min-width: 75%;
 }
@@ -392,7 +392,7 @@ ul > li {
 
 .skill-description { 
 	color: var(--color-text);
-	text-align: justify;
+	text-align: left;
 }
 
 
@@ -615,7 +615,7 @@ ul > li {
 	margin-top: 1rem;
 	grid-column: 1/3;
 	grid-row: 3/4;
-	text-align: justify;
+	text-align: left;
 }
 
 
@@ -774,7 +774,7 @@ ul > li {
 }
 
 .project-page-description > p {
-	text-align: justify;
+	text-align: left;
 	margin-top: 1rem;
 }
 
