@@ -68,7 +68,7 @@ educations:
             - "1.1 / 1.0"
             - "Graduated with distinction"
             - "Graduated top of class"
-        url: /certificates/DennisVidal_Master.pdf
+        url: "/certificates/DennisVidal_Master.pdf"
 
     -   name:
             - "Bachelor of Science"
@@ -79,7 +79,7 @@ educations:
             - "Kempten, Germany"
         result:
             - "1.5 / 1.0"
-        url: /certificates/DennisVidal_Bachelor.pdf
+        url: "/certificates/DennisVidal_Bachelor.pdf"
 
 
 papers:
@@ -233,17 +233,17 @@ papers:
                     {% for education in page.educations %}
                         <a class="education" href=" {{ education.url }}" target="_blank">
                             <div class="education-title">
-                                {% for entry in page.name %}
+                                {% for entry in education.name %}
                                     <p>{{ entry }}</p>
                                 {% endfor %}
                             </div>
                             <div class="education-result">
-                                {% for entry in page.result %}
+                                {% for entry in education.result %}
                                     <p>{{ entry }}</p>
                                 {% endfor %}
                             </div>
                             <div class="education-school">
-                                {% for entry in page.school %}
+                                {% for entry in education.school %}
                                     <p>{{ entry }}</p>
                                 {% endfor %}
                             </div>
@@ -264,7 +264,7 @@ papers:
                         <a class="paper" href="{{ paper.url }}" target="_blank">
                             <p class="paper-title">{{ paper.name }}</p>
                             <div class="paper-meta">
-                                {% for entry in page.meta %}
+                                {% for entry in paper.meta %}
                                     <p>{{ entry }}</p>
                                 {% endfor %}
                             </div>
