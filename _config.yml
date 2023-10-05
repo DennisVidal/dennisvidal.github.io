@@ -3,7 +3,12 @@ name: "Dennis Vidal"
 email: "Dennis.Vidal.dc@gmail.com"
 resume: "/resume/DennisVidal_Resume.pdf"
 
-include: 
-  - "_projects"
+permalink: "pretty"
 
-permalink: pretty
+defaults:
+  - scope:
+      path: "projects"
+      type: "pages"
+    values:
+      layout: "project"
+      permalink: "/:title"
