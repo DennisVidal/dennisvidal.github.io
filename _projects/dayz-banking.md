@@ -2,7 +2,6 @@
 layout: project
 title: "DayZ Banking"
 permalink: /dayz-banking
-video: "https://www.youtube.com/embed/Yi5lOAzYwzY"
 
 descriptions:
     - "Banking is a mod for the game DayZ that, as the name suggests, adds a banking system to the game. It consists of ATMs that players can interact with, allowing them to safely deposit a certain amount of money before heading out or withdraw some when they want to gear up at a trader."
@@ -41,13 +40,13 @@ tools:
     -   name: "Substance Painter"
 
 screenshots:
-    - "/projects/Banking/images/Banking_1.jpg"
-    - "/projects/Banking/images/Banking_2.jpg"
-    - "/projects/Banking/images/Banking_3.jpg"
-    - "/projects/Banking/images/Banking_4.jpg"
-    - "/projects/Banking/images/Banking_5.jpg"
-    - "/projects/Banking/images/Banking_6.jpg"
-    - "/projects/Banking/images/Banking_7.jpg"
-    - "/projects/Banking/images/Banking_8.jpg"
-    - "/projects/Banking/images/Banking_9.jpg"
+    - "/images/dayz-banking/banking-1.jpg"
+    - "/images/dayz-banking/banking-2.jpg"
+    - "/images/dayz-banking/banking-3.jpg"
+    - "/images/dayz-banking/banking-4.jpg"
+    - "/images/dayz-banking/banking-5.jpg"
+    - "/images/dayz-banking/banking-6.jpg"
+    - "/images/dayz-banking/banking-7.jpg"
+    - "/images/dayz-banking/banking-8.jpg"
+    - "/images/dayz-banking/banking-9.jpg"
 ---
