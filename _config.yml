@@ -5,3 +5,5 @@ resume: "/resume/DennisVidal_Resume.pdf"
 
 include: 
   - "_projects"
+
+permalink: pretty
