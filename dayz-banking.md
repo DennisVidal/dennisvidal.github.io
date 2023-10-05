@@ -1,7 +1,7 @@
 ---
 layout: "project"
 title: "DayZ Banking"
-permalink: "/dayz-banking/"
+permalink: "/dayz-fast-travel/"
 
 descriptions:
     - "Banking is a mod for the game DayZ that, as the name suggests, adds a banking system to the game. It consists of ATMs that players can interact with, allowing them to safely deposit a certain amount of money before heading out or withdraw some when they want to gear up at a trader."
