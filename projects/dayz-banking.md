@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "DayZ Banking"
-permalink: /dayz-banking-test
+permalink: /dayz-banking
 video: "https://www.youtube.com/embed/Yi5lOAzYwzY"
 
 descriptions:

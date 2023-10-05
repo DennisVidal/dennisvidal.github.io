@@ -129,9 +129,9 @@
                     <div class="carousel-content">
                         {% assign screenshotCounter = 0 %}
                         {% for screenshot in page.screenshots %}
+                            {% assign screenshotCounter = screenshotCounter | plus:1 %}
                             <div class="project-page carousel-item">
                                 <a href="{{ screenshot }}" target="_blank">
-                                    {% assign screenshotCounter = screenshotCounter | plus:1 %}
                                     <img class="project-image" src="{{ screenshot }}" alt="The {{ screenshotCounter }}. screenshot of {{ page.title }}">
                                 </a>
                             </div>
