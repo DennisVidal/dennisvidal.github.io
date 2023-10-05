@@ -62,7 +62,7 @@
                             <p class="project-page info-item-title">Links:</p>
                             <div class="project-page info-item-content horizontal">
                                 {% for link in page.links %}
-                                    <a class="icon {{ link.icon }}" href="{{ link.url }}" target="_blank"></a>
+                                    <a class="icon {{ link.icon }}" href="{{ link }}" target="_blank"></a>
                                 {% endfor %}
                             </div>
                         </div>
@@ -78,9 +78,9 @@
                             <p class="project-page info-item-title">Engine:</p>
                             <div class="project-page info-item-content">
                                 {% if page.engine.url %}
-                                    <a href="{{ page.engine.url }}" target="_blank">{{ page.engine.name }}</a>
+                                    <a href="{{ page.engine.url }}" target="_blank">{{ page.engine }}</a>
                                 {% else %}
-                                    <p>{{ page.engine.name }}</p>
+                                    <p>{{ page.engine }}</p>
                                 {% endif %}
                             </div>
                         </div>
@@ -90,9 +90,9 @@
                             <div class="project-page info-item-content">
                                 {% for language in page.languages %}
                                     {% if language.url %}
-                                        <a href="{{ language.url }}" target="_blank">{{ language.name }}</a>>
+                                        <a href="{{ language.url }}" target="_blank">{{ language }}</a>>
                                     {% else %}
-                                        <p>{{ language.name }}</p>
+                                        <p>{{ language }}</p>
                                     {% endif %}
                                 {% endfor %}
                             </div>
@@ -112,9 +112,9 @@
                             <div class="project-page info-item-content">
                                 {% for tool in page.tools %}
                                     {% if tool.url %}
-                                        <a href="{{ tool.url }}" target="_blank">{{ tool.name }}</a>>
+                                        <a href="{{ tool.url }}" target="_blank">{{ tool }}</a>>
                                     {% else %}
-                                        <p>{{ tool.name }}</p>
+                                        <p>{{ tool }}</p>
                                     {% endif %}
                                 {% endfor %}
                             </div>

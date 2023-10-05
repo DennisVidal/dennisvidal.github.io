@@ -12,36 +12,28 @@ role-descriptions:
     - "As the developer of the mod, I worked on every part of it. Since it was essentially my first mod for DayZ, this required a decent amount of time, as I had to familiarize myself not only with the modding side of DayZ's Enfusion Engine but also figure out aspects that I had relatively little hands-on experience with at the time, for example, the networking required to get the mod to work in multiplayer."
 
 links:
-    - github:
-        url: "https://github.com/DennisVidal/DayZ-Banking"
+    - "https://github.com/DennisVidal/DayZ-Banking"
         icon: "fab fa-github"
-    - steam:
-        url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1836257061"
+    - "https://steamcommunity.com/sharedfiles/filedetails/?id=1836257061"
         icon: "fab fa-steam"
 
 release: "August 2019"
 
-engine:
-    name: "Enfusion"
+engine: "Enfusion"
     url: "https://enfusionengine.com"
 
 languages:
-    - enforce:
-        name: "Enforce Script (C#&#8209like)"
+    - "Enforce Script (C#&#8209like)"
         url: "https://community.bistudio.com/wiki/DayZ:Enforce_Script_Syntax"
 
 roles: ["Programmer", "Designer", "Artist"]
 
 tools:
-    - visual-studio:
-        name: "Visual Studio"
-    - dayz-tools:
-        name: "Visual Studio"
+    - "Visual Studio"
+    - "DayZ Tools"
         url: "https://store.steampowered.com/app/830640/DayZ_Tools/"
-    - blender:
-        name: "Blender"
-    - substance painter:
-        name: "Substance Painter"
+    - "Blender"
+    - "Substance Painter"
 
 screenshots:
     - "/projects/Banking/images/Banking_1.jpg"
