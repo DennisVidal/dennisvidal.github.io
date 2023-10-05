@@ -22,24 +22,27 @@ project:
 
     release: "August 2019"
 
-    engine: "Enfusion"
+    engine:
+        name: "Enfusion"
         url: "https://enfusionengine.com"
 
     languages:
-        enforce: "Enforce Script (C#&#8209like)"
+        enforce:
+            name: "Enforce Script (C#&#8209like)"
             url: "https://community.bistudio.com/wiki/DayZ:Enforce_Script_Syntax"
 
-    roles:
-        - "Programmer"
-        - "Designer"
-        - "Artist"
+    roles: ["Programmer", "Designer", "Artist"]
 
     tools:
-        visual-studio: "Visual Studio"
-        dayz-tools: "Visual Studio"
+        visual-studio:
+            name: "Visual Studio"
+        dayz-tools:
+            name: "Visual Studio"
             url: "https://store.steampowered.com/app/830640/DayZ_Tools/"
-        blender: "Blender"
-        substance painter: "Substance Painter"
+        blender:
+            name: "Blender"
+        substance painter:
+            name: "Substance Painter"
 
     screenshots:
         - "/projects/Banking/images/Banking_1.jpg"

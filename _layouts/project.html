@@ -78,9 +78,9 @@
                             <p class="project-page info-item-title">Engine:</p>
                             <div class="project-page info-item-content">
                                 {% if page.project.engine.url %}
-                                    <a href="{{ page.project.engine.url }}" target="_blank">{{ page.project.engine }}</a>
+                                    <a href="{{ page.project.engine.url }}" target="_blank">{{ page.project.engine.name }}</a>
                                 {% else %}
-                                    <p>{{ page.project.engine }}</p>
+                                    <p>{{ page.project.engine.name }}</p>
                                 {% endif %}
                             </div>
                         </div>
@@ -90,9 +90,9 @@
                             <div class="project-page info-item-content">
                                 {% for language in page.project.languages %}
                                     {% if language.url %}
-                                        <a href="{{ language.url }}" target="_blank">{{ language }}</a>>
+                                        <a href="{{ language.url }}" target="_blank">{{ language.name }}</a>>
                                     {% else %}
-                                        <p>{{ language }}</p>
+                                        <p>{{ language.name }}</p>
                                     {% endif %}
                                 {% endfor %}
                             </div>
@@ -112,9 +112,9 @@
                             <div class="project-page info-item-content">
                                 {% for tool in page.project.tools %}
                                     {% if tool.url %}
-                                        <a href="{{ tool.url }}" target="_blank">{{ tool }}</a>>
+                                        <a href="{{ tool.url }}" target="_blank">{{ tool.name }}</a>>
                                     {% else %}
-                                        <p>{{ tool }}</p>
+                                        <p>{{ tool.name }}</p>
                                     {% endif %}
                                 {% endfor %}
                             </div>
