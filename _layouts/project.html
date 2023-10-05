@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/all.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="links">
+            <a class="link" href="{{ site.github }}" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="link" href="mailto:{{ site.email }}">
+                <i class="fas fa-envelope"></i>
+                <p class="e-mail">{{ site.email }}</p>
+            </a>
+        </div>
+        <div class="other-links">
+            <a href="/" class="navigation-home">About Me</a>
+            <a href="{{ site.resume }}" target="_blank">Resume</a>
+        </div>
+    </nav>
+    
+    
+    <main class="page-main">
+
+        <section class="project-page content-section">
+            <div class="project-page-content">
+                {% if page.project.video %}
+                    <div class="project-page-video">
+                        <iframe width="1920" height="1080" src="{{ page.project.video }}" title="{{ page.project.name }} – Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                {% endif %}
+
+
+                <div class="project-page-description">
+                    <h1>{{ page.project.name }}</h1>
+                    {% for description in page.project.descriptions %}
+                        <p>
+                            {{ description }}
+                        </p>
+                    {% endfor %}
+                    
+                    <h2>What was my role?</h2>
+                    {% for description in page.project.role-descriptions %}
+                        <p>
+                            {{ description }}
+                        </p>
+                    {% endfor %}
+                </div>
+
+
+                <div class="project-page info-wrapper">
+                    <div class="project-page info">
+                        <div class="project-page info-item">
+                            <p class="project-page info-item-title">Links:</p>
+                            <div class="project-page info-item-content horizontal">
+                                {% for link in page.project.links %}
+                                    <a class="icon {{ link.icon }}" href="{{ link.url }}" target="_blank"></a>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <div class="project-page info-item">
+                            <p class="project-page info-item-title">Release Date:</p>
+                            <div class="project-page info-item-content">
+                                <p>{{ page.project.release }}</p>
+                            </div>
+                        </div>
+            
+                        <div class="project-page info-item">
+                            <p class="project-page info-item-title">Engine:</p>
+                            <div class="project-page info-item-content">
+                                {% if page.project.engine.url %}
+                                    <a href="{{ page.project.engine.url }}" target="_blank">{{ page.project.engine }}</a>
+                                {% else %}
+                                    <p>{{ page.project.engine }}</p>
+                                {% endif %}
+                            </div>
+                        </div>
+            
+                        <div class="project-page info-item">
+                            <p class="project-page info-item-title">Languages:</p>
+                            <div class="project-page info-item-content">
+                                {% for language in page.project.languages %}
+                                    {% if language.url %}
+                                        <a href="{{ language.url }}" target="_blank">{{ language }}</a>>
+                                    {% else %}
+                                        <p>{{ language }}</p>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+            
+                        <div class="project-page info-item">
+                            <p class="project-page info-item-title">Roles:</p>
+                            <div class="project-page info-item-content">
+                                {% for role in page.project.roles %}
+                                    <p>{{ role }}</p>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <div class="project-page info-item">
+                            <p class="project-page info-item-title">Tools:</p>
+                            <div class="project-page info-item-content">
+                                {% for tool in page.project.tools %}
+                                    {% if tool.url %}
+                                        <a href="{{ tool.url }}" target="_blank">{{ tool }}</a>>
+                                    {% else %}
+                                        <p>{{ tool }}</p>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+                <div class="carousel">
+                    <div class="carousel-content">
+                        {% for screenshot in page.project.screenshots %}
+                            <div class="project-page carousel-item">
+                                <a href="{{ screenshot.url }}" target="_blank">
+                                    <img class="project-image" src="{{ screenshot.url }}" alt="The {% increment screenshotCounter %}. screenshot of {{ page.project.name }}">
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="project-page carousel-controls">
+                        <button class="carousel-button prev">
+                            <i class="fas fa-angle-left"></i>
+                        </button>
+                        <div class="carousel-dots">
+                            <!--<button class="carousel-dot active"></button>-->
+                        </div>
+                        <button class="carousel-button next">
+                            <i class="fas fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <script src="/jss/carousel.js"></script>
+</body>
