@@ -1,0 +1,84 @@
+---
+title: "Dennis Vidal's papers"
+permalink: "/papers/"
+
+papers:
+    -   name: "Noise-based Generation of 3D Worlds for a VR Flight Simulation"
+        url: "/papers/procedural-generation/"
+        meta:
+            - "April 2022"
+            - "Master's thesis (German)"
+        description: "The focus of my master's thesis is the procedural generation of environments in games. The paper describes different aspects of procedural generation as well as the flight simulation I developed as part of the thesis."
+   
+    -   name: "Multimodal Influences on Perception to Increase the Immersion of VR Applications"
+        url: "/papers/immersion/"
+        meta:
+            - "June 2021"
+            - "Seminar paper (English)"
+        description: "The general topic of this paper is immersion in games. It dives into what immersion actually is, the factors that influence it, and ways that can be utilized to increase it in the context of games."
+    
+    -   name: "Nonverbal Communication with Autonomously Controlled Characters in AR Worlds"
+        url: "/papers/nonverbal-communication/"
+        meta:
+            - "June 2020"
+            - "Bachelor's thesis (German)"
+        description: "The focus of my bachelor's thesis is communication with virtual characters through nonverbal means, e.g., gaze direction and distance to the character. The paper describes certain aspects of nonverbal communication and cues as well as the project I developed as part of the thesis."
+    
+    -   name: "Learning Analytics for Serious Games"
+        url: "/papers/learning-analytics/"
+        meta:
+            - "June 2019"
+            - "Seminar paper (English)"
+        description: "The topic of this paper is learning analytics and its application in serious games. It provides general information about learning analytics and gives an overview of its components."
+---
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/all.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="links">
+            <a class="link" href="{{ site.github }}" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="link" href="mailto:{{ site.email }}">
+                <i class="fas fa-envelope"></i>
+                <p class="e-mail">{{ site.email }}</p>
+            </a>
+        </div>
+        <div class="other-links">
+            <a href="/" class="navigation-home">About Me</a>
+            <a href="{{ site.resume }}" target="_blank">Resume</a>
+        </div>
+    </nav>
+    <main class="page-main">
+        <section class="project-page content-section">
+            <div class="papers">
+                {% for paper in page.papers %}
+                    <a class="paper" href="{{ paper.url }}" target="_blank">
+                        <p class="paper-title">{{ paper.name }}</p>
+                        <div class="paper-meta">
+                            {% for entry in paper.meta %}
+                                <p>{{ entry }}</p>
+                            {% endfor %}
+                        </div>
+                        <p class="paper-description">
+                            {{ paper.description }}
+                        </p>
+                    </a>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+    <script src="/jss/carousel.js"></script>
+</body>
+</html>
