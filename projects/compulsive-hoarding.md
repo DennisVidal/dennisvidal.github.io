@@ -12,6 +12,19 @@ descriptions:
 role-descriptions:
     - "While I am usually involved in programming, I chose to be responsible for the models and partially the environment in this project, as I was one of the only students that was willing to work on these parts, and I wanted to improve in these aspects anyway at the time. Having said that, I ended up helping a significant amount in both the design and quality assurance of the project as well."
 
+
+
+sections:
+    -   contents:
+            -   text: "Compulsive Hoarding is a serious game meant to support the treatment of various hoarding disorders using the immersive nature of VR. To achieve this, I and six other students worked together with a group of psychologists to provide a tool that they could effectively use in the treatment of their patients."
+
+            -   text: "In the game itself, the user has to dispose of a configurable amount of items, all while a psychologist can monitor their process via a separate interface. While this might sound simple to most, it can prove quite challenging for patients to throw away even common items, depending on the severity of their disorder."
+
+    -   heading: "What was my role?"
+        contents:
+            -   text: "While I am usually involved in programming, I chose to be responsible for the models and partially the environment in this project, as I was one of the only students that was willing to work on these parts, and I wanted to improve in these aspects anyway at the time. Having said that, I ended up helping a significant amount in both the design and quality assurance of the project as well."
+
+
 links:
     -   name: "github"
         url: "https://github.com/DennisVidal/compulsive-hoarding"

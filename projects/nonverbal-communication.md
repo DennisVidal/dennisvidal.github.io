@@ -5,11 +5,15 @@ permalink: "/nonverbal-communication/"
 
 video: "https://www.youtube.com/embed/t2XhstgVzgY"
 
-descriptions:
-    - "Nonverbal Communication is an AR project for the Hololens that I developed as part of my bachelor's thesis. In it, you can interact with a virtual character through a range of nonverbal cues, including your distance from the character and your gaze direction."
 
-role-descriptions:
-    - "Because the project was part of my bachelor's thesis, I worked on it in its entirety. In regards to programming, this includes designing and implementing the different systems that handle the nonverbal behaviors for both the player and virtual character. Examples would be the gaze system, which allows the character to perceive and react to the gaze of the player and thrown objects, as well as the system the character uses to distance themselves appropriately from the player should they come too close or move too far away."
+sections:
+    -   contents:
+            -   text: "Nonverbal Communication is an AR project for the Hololens that I developed as part of my bachelor's thesis. In it, you can interact with a virtual character through a range of nonverbal cues, including your distance from the character and your gaze direction."
+
+    -   heading: "What was my role?"
+        contents:
+            -   text: "Because the project was part of my bachelor's thesis, I worked on it in its entirety. In regards to programming, this includes designing and implementing the different systems that handle the nonverbal behaviors for both the player and virtual character. Examples would be the gaze system, which allows the character to perceive and react to the gaze of the player and thrown objects, as well as the system the character uses to distance themselves appropriately from the player should they come too close or move too far away."
+
 
 links:
     -   name: "github"

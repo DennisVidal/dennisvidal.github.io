@@ -3,11 +3,16 @@ layout: "project"
 title: "DayZ Breachingcharge"
 permalink: "/dayz-breachingcharge/"
 
-descriptions:
-    - "Breachingcharge is a mod for the game DayZ that adds a raiding system to the game, aimed at improving the vanilla raiding experience. It is highly configurable and features a completely separate damage system, allowing server owners to further adjust the experience of their players without having to touch any other already-existing parts."
 
-role-descriptions:
-    - "While Breachingcharge is a mod primarily developed by my brother, I helped quite a bit in the design and debugging of systems as well as the general testing of the mod."
+
+sections:
+    -   contents:
+            -   text: "Breachingcharge is a mod for the game DayZ that adds a raiding system to the game, aimed at improving the vanilla raiding experience. It is highly configurable and features a completely separate damage system, allowing server owners to further adjust the experience of their players without having to touch any other already-existing parts."
+
+    -   heading: "What was my role?"
+        contents:
+            -   text: "While Breachingcharge is a mod primarily developed by my brother, I helped quite a bit in the design and debugging of systems as well as the general testing of the mod."
+
 
 links:
     -   name: "github"

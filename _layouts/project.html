@@ -38,23 +38,29 @@
                     </div>
                 {% endif %}
 
-
                 <div class="project-page-description">
                     <h1>{{ page.title }}</h1>
-                    {% for description in page.descriptions %}
-                        <p>
-                            {{ description }}
-                        </p>
-                    {% endfor %}
-                    
-                    <h2>What was my role?</h2>
-                    {% for description in page.role-descriptions %}
-                        <p>
-                            {{ description }}
-                        </p>
-                    {% endfor %}
-                </div>
 
+                    {% for section in page.sections %}
+                        {% if section.heading %}
+                            <h2>{{ section.heading }}</h2>
+                        {% endif %}
+                        {% for content in section.contents %}
+                            <p>
+                                {{ content.text }}
+
+                                {% if content.bullets %}
+                                    <ul>
+                                    {% for bullet in content.bullets %}
+                                    <li class="{{ bullet.style }}">{{ bullet.text }}</li>
+                                    {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </p>
+                        {% endfor %}
+                    {% endfor %}
+
+                </div>
 
                 <div class="project-page info-wrapper">
                     <div class="project-page info">

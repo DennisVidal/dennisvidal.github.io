@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <object data="{{ page.pdf }}" type="application/pdf" style="position: absolute; width: 100%; height: 100%">
+        <p>It appears the embedded PDF couldn't be displayed in your browser. You can find it here: <a href="{{ page.pdf }}">{{ page.pdf }}</a></p>
+    </object>
+</body>
+</html>
