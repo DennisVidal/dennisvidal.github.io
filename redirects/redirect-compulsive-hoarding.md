@@ -1,6 +1,6 @@
 ---
 layout: "redirect"
 permalink: "/projects/CompulsiveHoarding/CompulsiveHoarding.html"
-redirect: "/compulsivehoarding/"
+redirect: "/compulsive-hoarding/"
 sitemap: false
 ---
