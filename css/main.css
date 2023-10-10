@@ -28,7 +28,7 @@
 p, a, button, i, li {
 	color: var(--color-text);
 	text-decoration: none;
-	font-size: calc(12pt + 0.4vw);
+	font-size: calc(11pt + 0.4vw);
 }
 
 i {
@@ -825,7 +825,7 @@ ul > li {
 .project-page-description li {
 	text-align: left;
 	list-style:none;
-	margin: 0.5rem 0;
+	margin: 0.75rem 0;
 }
 
 .project-page-description li.disc {
