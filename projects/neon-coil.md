@@ -24,7 +24,7 @@ sections:
                     -   text: "<b>Flexible entity spawning:</b> We weren't quite sure how far we would take the project, so we ideally wanted a design that could be easily build on down the line. To achieve this, I based it on Risk of Rain 2's director system, with each game mode having two generalized directors to spawn both enemies and items. Each director utilizes an array of behaviors and registered areas to decide when and where to spawn entities in a modular and easily extendable way."
                         style: "disc"
 
-                    -   text: "<b>A modular ability system:</b> As part of Neon Coil, we decided to create an inheritance-based ability system that takes inspiration from Unreal's Gameplay Ability System but is of course a lot more rudimentary to keep the project simple and within the timeframe we set while still making it easy to implement any abilities we might decide to add later on."
+                    -   text: "<b>Modular ability system:</b> As part of Neon Coil, we decided to create an inheritance-based ability system that takes inspiration from Unreal's Gameplay Ability System but is of course a lot more rudimentary to keep the project simple and within the timeframe we set while still making it easy to implement any abilities we might decide to add later on."
                         style: "disc"
 
                     -   text: "<b>Interface-based score, item, and damage systems:</b> I opted to use interfaces to manage the communication between most classes. This allowed us to eliminate a lot of direct dependencies and made development overall significantly simpler, as we didn't need to know what object we were dealing with as long as it implemented the required interface."
