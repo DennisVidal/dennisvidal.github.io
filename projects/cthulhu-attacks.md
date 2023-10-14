@@ -7,11 +7,22 @@ video: "https://www.youtube.com/embed/3qEliUaHIwQ"
 
 sections:
     -   contents:
-            -   text: "Cthulhu Attacks is an AR shooter in which you have to fight off Cthulhu and waves of his minions. The project is the result of a collaboration between myself and four other students. After initially scanning the play area, you are faced with dynamically appearing portals from which Cthulhu's minions emerge. To fight them off, you can switch between multiple spells using voice commands, and once enough of his minions have been defeated, Cthulhu emerges to face you himself. To deal with his attacks, you have to either dodge them or use the environment as cover."
+            -   text: "Cthulhu Attacks is an AR shooter in which your goal is to save the world by fighting off Cthulhu and his minions. Reading an occult book has summoned portals in your environment, through which wave after wave of eldritch horrors emerge to hunt you. You have to survive against these creatures long enough to face Cthulhu himself and close the portals for good."
+            
+            -   text: "This project is the result of a five-man group project under the premise of creating an immersive shooter experience that utilizes Microsoft's HoloLens to project the game's content into the real world."
 
     -   heading: "What was my role?"
         contents:
-            -   text: "I was responsible for creating any gameplay-related mechanics in the game. This includes the design and implementation of enemy mechanics such as their movement and spawning in waves, as well as the different player spells and Cthulhu's attack patterns."
+            -   text: "While the team had multiple programmers, I was the sole gameplay programmer on Cthulhu Attacks and, as such, was responsible for designing and implementing nearly all player-facing systems. Some of the general aspects I gained experience with throughout the project include:"
+                bullets:
+                    -   text: "<b>Developing gameplay mechanics:</b> Thanks to my role on the team, I got to realize a wide variety of gameplay mechanics. These ranged from the enemy and spell systems to the wave-based spawning and overall game loop. One of the more noteworthy ones in this context are the steering behaviors that drive the movements of the enemy AI. This modular approach not only made it easy to compose more complex actions but also led to the natural swarm behaviors we wanted for the game."
+                        style: "disc"
+
+                    -   text: "<b>Communication with team members:</b> Since my role was essentially at the center of the project, I got to work extensively with the other programmers and artists on the team to ensure that everything we had worked on fit together perfectly. On top of solid planning and communication, this required me to develop a decent understanding of the areas for which they were responsible and enabled me to design my features appropriately."
+                        style: "disc"
+
+                    -   text: "<b>Project management through Scrum:</b> Part of the project involved the introduction of Scrum to ease task and time management. I hadn't used Scrum in-depth before, so it took a short time to get used to the process. Once that was done, it helped both myself and the rest of the team immensely in our priority management and allowed us to finish the core of the game on time while leaving room to polish some of the mechanics."
+                        style: "disc"
 
 links:
     -   name: "github"

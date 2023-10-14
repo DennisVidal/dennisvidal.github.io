@@ -5,12 +5,12 @@
 :root {
 	--color-header: #333;
     --color-button: #444;
-	--color-background: #333;
+	--color-background: #252525;
 	--color-text: #dcdcdc;
 	--color-text-highlight: #fff;
 	--color-highlight: #17b617/*#26ad56*//*#32cd32*/;
 	--color-transparent: #0004;
-	--color-background-element: #222;
+	--color-background-element: #181818;
 	--color-outline: #000f;
 }
 
