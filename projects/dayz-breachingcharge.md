@@ -7,11 +7,18 @@ permalink: "/dayz-breachingcharge/"
 
 sections:
     -   contents:
-            -   text: "Breachingcharge is a mod for the game DayZ that adds a raiding system to the game, aimed at improving the vanilla raiding experience. It is highly configurable and features a completely separate damage system, allowing server owners to further adjust the experience of their players without having to touch any other already-existing parts."
+            -   text: "Breachingcharge is a DayZ mod that adds a raiding system to the game, aimed at improving the vanilla raiding experience. It is highly configurable and features a custom damage system, allowing server owners to further adjust the experience that their servers provide to players."
 
     -   heading: "What was my role?"
         contents:
-            -   text: "While Breachingcharge is a mod primarily developed by my brother, I helped quite a bit in the design and debugging of systems as well as the general testing of the mod."
+            -   text: "Breachingcharge is a mod primarily developed by my brother. Since I already started the development on my <a href=\"https://dennisvidal.github.io/dayz-banking/\"target=\"_blank\">Banking</a> and <a href=\"https://dennisvidal.github.io/dayz-fast-travel/\"target=\"_blank\">Fast Travel</a> mods at this point, my role in this project focused mostly on helping with the design and debugging as well as programming on multiple parts of the mod. Two of the major aspects I had a hand in are:"
+
+                bullets:
+                    -   text: "<b>Custom base raiding:</b> The raiding system at the core of the mod had a row of requirements that made development rather complex. One of the most important of these was that it had to be as configurable as possible while ideally working with any building mods that a server might use. Since not all mods supported DayZ's damage system back then, it was easier to forgo using it entirely, and led us to implement a custom damage system for the charges. Although this worked pretty well over the years, it sometimes required additional code to ensure compatibility with newly released building mods that used different setups. This is part of the reason why my brother and I decided to rework the entire system as part of the <a href=\"https://dennisvidal.github.io/dayz-more-explosives/\"target=\"_blank\">More Explosives</a> mod."
+                        style: "disc"
+                        
+                    -   text: "<b>System design and networking:</b> Since I was already familiar with DayZ's codebase to a degree at the time, I was able to assist in designing large parts of the mod's mechanics. Apart from the above-mentioned raiding system, this includes the functionality and placement of charges as well as the synchronization of raiding data across all clients, to name a few. In addition to furthering my knowledge of the modding process, this also enabled me to deepen my understanding of networking and the design of more intricate gameplay mechanics in general."
+                        style: "disc"
 
 
 links:
